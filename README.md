@@ -17,4 +17,25 @@ This project establishes a proactive, automated Blue-Team utility. It ingests su
 ## Core Detection Architecture and Data Pipeline
 The detection engine processes inputs through a modular, decoupled processing pipeline to limit communication overhead and enforce secure analysis parameters:
 
-[ Incoming Suspicious URL ]│▼┌─────────────────────────────────────────┐│     Lexical Verification Engine         │ Parses domain entropy, length,│      (String-Level Analysis)            │ brand keywords, and TLD variants.└─────────────────────────────────────────┘│▼┌─────────────────────────────────────────┐│      Passive OSINT Interrogation        │ Non-blocking hash and domain lookup│         (VirusTotal API)                │ via authenticated API abstraction.└─────────────────────────────────────────┘│▼┌─────────────────────────────────────────┐│     Normalized Classification Engine    │ Weighted algorithmic calculation│       (Severity Score Generation)       │ to evaluate total malicious metrics.└─────────────────────────────────────────┘│▼[ Final Triage Verdict and Defensive Escalation Playbook ]
+[ Incoming Suspicious URL ]
+             │
+             ▼
+┌─────────────────────────────────────────┐
+│     Lexical Verification Engine         │  Parses domain entropy, length,
+│      (String-Level Analysis)            │  brand keywords, and TLD variants.
+└─────────────────────────────────────────┘
+             │
+             ▼
+┌─────────────────────────────────────────┐
+│      Passive OSINT Interrogation        │  Non-blocking hash and domain lookup
+│         (VirusTotal API)                │  via authenticated API abstraction.
+└─────────────────────────────────────────┘
+             │
+             ▼
+┌─────────────────────────────────────────┐
+│     Normalized Classification Engine    │  Weighted algorithmic calculation
+│       (Severity Score Generation)       │  to evaluate total malicious metrics.
+└─────────────────────────────────────────┘
+             │
+             ▼
+[ Final Triage Verdict and Defensive Escalation Playbook ]
