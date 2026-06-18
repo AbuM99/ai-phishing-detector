@@ -1,7 +1,7 @@
 # Automated AI-Driven Phishing Detection Engine (SARS Threat Profile)
 
 ## Disclaimer and Compliance Notice
-This project is developed strictly for educational purposes, defensive blueprint testing, and SOC awareness training. The heuristic detection vectors evaluated herein model regional attack methodologies documented by financial institutions and regulatory frameworks within South Africa. This切割 application does not interact with, intercept, or exploit any live institutional infrastructure.
+This project is developed strictly for educational purposes, defensive blueprint testing, and SOC awareness training. The heuristic detection vectors evaluated herein model regional attack methodologies documented by financial institutions and regulatory frameworks within South Africa. This application does not interact with, intercept, or exploit any live institutional infrastructure.
 
 ---
 
